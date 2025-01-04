@@ -4,6 +4,11 @@ package dao;
 public class DaoImpl implements IDao{
     @Override
     public double getData(){
-        return 0;
+
+        //        Se connecter a la BD recupere la températue
+
+        System.out.println("Version base de données");
+        double temp=Math.random()*40;
+        return temp;
     }
 }
