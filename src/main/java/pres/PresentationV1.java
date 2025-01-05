@@ -9,7 +9,7 @@ import metier.MetierImpl;
 public class PresentationV1 {
     public static void main(String[] args) {
         /*
-        Injection des dépendances par instanciation statique
+        Injection des dépendances par instanciation statique : cad new : en utilisant new
          */
         DaoImpl d = new DaoImpl();
         MetierImpl metier=new MetierImpl();
