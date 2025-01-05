@@ -10,6 +10,12 @@ public class MetierImpl implements IMetier{
     //depand des interfaces et pas de classe
     //private IDao dao = new DaoImplV2();
     private IDao dao;
+
+    // Injecter dans la variable dao un objet d'une classe qui implémente l'interface IDao
+    //Injection par constructeur
+    public MetierImpl(IDao dao){
+        this.dao = dao;
+    }
     @Override
     public double calcul(){
         double t = dao.getData();
@@ -19,8 +25,9 @@ public class MetierImpl implements IMetier{
 
     /*
     Injecter dans la variable dao un objet d'une classe qui implemente l'interface IDao
+    Injection en utilisant setter
     */
-    public void setDao(IDao dao){
+    /*public void setDao(IDao dao){
         this.dao = dao;
-    }
+    }*/
 }

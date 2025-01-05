@@ -12,8 +12,9 @@ public class PresentationV1 {
         Injection des dépendances par instanciation statique : cad new : en utilisant new
          */
         DaoImpl d = new DaoImpl();
-        MetierImpl metier=new MetierImpl();
-        metier.setDao(d); //Injection via le setter
+        //MetierImpl metier=new MetierImpl();
+        MetierImpl metier = new MetierImpl(d);
+        //metier.setDao(d); //Injection via le setter
         System.out.println("RES="+metier.calcul());
     }
 }
