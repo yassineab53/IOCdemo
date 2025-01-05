@@ -13,7 +13,7 @@ public class MetierImpl implements IMetier{
     @Override
     public double calcul(){
         double t = dao.getData();
-        double res = t*23;
+        double res = t*4;
         return res;
     }
 
