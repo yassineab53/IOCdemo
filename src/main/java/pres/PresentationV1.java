@@ -13,7 +13,7 @@ public class PresentationV1 {
          */
         DaoImpl d = new DaoImpl();
         //MetierImpl metier=new MetierImpl();
-        MetierImpl metier = new MetierImpl(d);
+        MetierImpl metier = new MetierImpl(d); // Injection des dépendances via le constructeur
         //metier.setDao(d); //Injection via le setter
         System.out.println("RES="+metier.calcul());
     }
