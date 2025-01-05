@@ -7,7 +7,7 @@ public class DaoImpl implements IDao{
 
         //        Se connecter a la BD recupere la températue
 
-        System.out.println("Version base de données");
+        System.out.println("Version base de  V1");
         double temp=Math.random()*3;
         return temp;
     }
