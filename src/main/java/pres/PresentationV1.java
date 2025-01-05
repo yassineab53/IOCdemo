@@ -13,7 +13,7 @@ public class PresentationV1 {
          */
         DaoImpl d = new DaoImpl();
         MetierImpl metier=new MetierImpl();
-        metier.setDao(d);
+        metier.setDao(d); //Injection via le setter
         System.out.println("RES="+metier.calcul());
     }
 }
